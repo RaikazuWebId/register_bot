@@ -10,11 +10,12 @@ cd /root
 rm -rf regis
 #install
 apt update && apt upgrade
-apt install python3 python3-pip git
+apt install python3 python3-pip -y
+apt install sqlite3 -y
 wget https://github.com/RaikazuWebId/register_bot/raw/refs/heads/main/regis.zip
 unzip regis.zip
 cd regis
-pip3 install -r regis/requirements.txt
+pip3 install -r requirements.txt
 pip3 install pillow
 
 #isi data
@@ -49,6 +50,7 @@ Restart=always
 WantedBy=multi-user.target
 END
 
+systemctl daemon-reload
 systemctl start regis 
 systemctl enable regis
 cd /root
