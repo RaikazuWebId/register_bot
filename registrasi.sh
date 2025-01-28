@@ -13,7 +13,7 @@ apt update && apt upgrade
 apt install python3 python3-pip git
 wget https://github.com/RaikazuWebId/register_bot/raw/refs/heads/main/regis.zip
 unzip regis.zip
-rm -rf regis.zip
+cd regis
 pip3 install -r regis/requirements.txt
 pip3 install pillow
 
