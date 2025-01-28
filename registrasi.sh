@@ -11,7 +11,7 @@ rm -rf regis
 #install
 apt update && apt upgrade
 apt install python3 python3-pip git
-wget https://raw.githubusercontent.com/LunaticBackend/regex/main/regis.zip
+wget https://github.com/RaikazuWebId/register_bot/raw/refs/heads/main/regis.zip
 unzip regis.zip
 rm -rf regis.zip
 pip3 install -r regis/requirements.txt
